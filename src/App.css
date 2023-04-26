@@ -1,0 +1,57 @@
+.calculator {
+  /* Vector */
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #5c48d3;
+}
+
+p {
+  display: flex;
+  border: solid 1px #5c48d3;
+  background-color: #5c48d3;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  font-size: 100px;
+  color: white;
+}
+
+.increment button {
+  background-color: transparent;
+  width: 52.5px;
+  height: 52.5px;
+  font-size: 100px;
+  color: black;
+  border: none;
+}
+
+.decrement button {
+  background-color: transparent;
+  width: 52.5px;
+  height: 11.25px;
+  font-size: 100px;
+  color: black;
+  border: none;
+}
+
+.reset {
+  background-color: #5c48d3;
+  display: flex;
+  border: solid 1px #5c48d3;
+  background-color: #5c48d3;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  font-size: 100px;
+  color: white;
+  border: none;
+  background-color: transparent;
+}
