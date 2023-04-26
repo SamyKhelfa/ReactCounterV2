@@ -9,6 +9,12 @@
   background: #5c48d3;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 p {
   display: flex;
   border: solid 1px #5c48d3;
@@ -40,18 +46,16 @@ p {
   border: none;
 }
 
-.reset {
+.reset button {
   background-color: #5c48d3;
   display: flex;
   border: solid 1px #5c48d3;
-  background-color: #5c48d3;
   justify-content: center;
   align-items: center;
   width: 150px;
-  height: 150px;
+  height: 60px;
   border-radius: 10px;
-  font-size: 100px;
+  font-size: 30px;
   color: white;
   border: none;
-  background-color: transparent;
 }
