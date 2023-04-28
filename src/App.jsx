@@ -3,9 +3,10 @@ import { useState } from "react";
 import Increment from "./components/Increment";
 import Decrement from "./components/Decrement";
 import Reset from "./components/Reset";
+import AddCounter from "./components/AddCounter";
 
 function App() {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState([0]);
 
   return (
     <>
@@ -23,6 +24,10 @@ function App() {
 
         <div className="reset">
           <Reset counter={counter} setCounter={setCounter}></Reset>
+        </div>
+
+        <div classname="addcounter">
+          <AddCounter counter={counter} />
         </div>
       </container>
     </>
