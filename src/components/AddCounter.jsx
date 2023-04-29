@@ -2,7 +2,7 @@ const AddCounter = ({ counter }) => {
   return (
     <button
       onClick={() => {
-        counter.push(0);
+        counter.push(1);
       }}
     >
       Add Counter

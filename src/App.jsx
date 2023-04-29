@@ -6,11 +6,11 @@ import Reset from "./components/Reset";
 import AddCounter from "./components/AddCounter";
 
 function App() {
-  const [counter, setCounter] = useState([0]);
+  const [counter, setCounter] = useState([0, 0]);
 
   return (
     <>
-      <div className="Calculator"></div>
+      <div>React Counter V2</div>
       <container>
         <div className="increment">
           <Increment counter={counter} setCounter={setCounter} />
