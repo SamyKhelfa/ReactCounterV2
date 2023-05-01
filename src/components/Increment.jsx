@@ -1,8 +1,11 @@
 const Increment = (props) => {
+  const countersCopy = [...props.counter];
+  countersCopy[props]++;
   return props.counter < 10 ? (
     <button
       onClick={() => {
-        props.setCounter(props.counter + 1);
+        countersCopy[props]++;
+        setCounter(countersCopy);
       }}
     >
       +

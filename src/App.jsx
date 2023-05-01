@@ -6,7 +6,7 @@ import Reset from "./components/Reset";
 import AddCounter from "./components/AddCounter";
 
 function App() {
-  const [counter, setCounter] = useState([0, 0]);
+  const [counter, setCounter] = useState([0]);
 
   return (
     <>
@@ -26,7 +26,7 @@ function App() {
           <Reset counter={counter} setCounter={setCounter}></Reset>
         </div>
 
-        <div classname="addcounter">
+        <div className="addcounter">
           <AddCounter counter={counter} />
         </div>
       </container>

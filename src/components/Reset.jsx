@@ -1,8 +1,11 @@
 const Reset = (props) => {
+  const countersCopy = [...props.counter];
+  countersCopy[props] = 0;
   return (
     <button
       onClick={() => {
-        props.setCounter(0);
+        countersCopy[props] = 0;
+        setCounter(countersCopy);
       }}
     >
       Reset
