@@ -11,7 +11,6 @@ function App() {
   return (
     <>
       <div>React Counter V2</div>
-      <container>
         <div className="increment">
           <Increment counter={counter} setCounter={setCounter} />
         </div>
@@ -29,7 +28,6 @@ function App() {
         <div className="addcounter">
           <AddCounter counter={counter} />
         </div>
-      </container>
     </>
   );
 }
