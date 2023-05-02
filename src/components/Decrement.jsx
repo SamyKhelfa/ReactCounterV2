@@ -5,7 +5,7 @@ const Decrement = (props) => {
     <button
       onClick={() => {
         countersCopy[props]--;
-        setCounter(countersCopy);
+        props.setCounter(countersCopy);
       }}
     >
       -

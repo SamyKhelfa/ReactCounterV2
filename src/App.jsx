@@ -11,23 +11,23 @@ function App() {
   return (
     <>
       <div>React Counter V2</div>
-        <div className="increment">
-          <Increment counter={counter} setCounter={setCounter} />
-        </div>
+      <div className="increment">
+        <Increment counter={counter} setCounter={setCounter} />
+      </div>
 
-        <p>{counter}</p>
+      <p>{counter}</p>
 
-        <div className="decrement">
-          <Decrement counter={counter} setCounter={setCounter} />
-        </div>
+      <div className="decrement">
+        <Decrement counter={counter} setCounter={setCounter} />
+      </div>
 
-        <div className="reset">
-          <Reset counter={counter} setCounter={setCounter}></Reset>
-        </div>
+      <div className="reset">
+        <Reset counter={counter} setCounter={setCounter}></Reset>
+      </div>
 
-        <div className="addcounter">
-          <AddCounter counter={counter} />
-        </div>
+      <div className="addcounter">
+        <AddCounter counter={counter} />
+      </div>
     </>
   );
 }
