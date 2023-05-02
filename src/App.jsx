@@ -28,7 +28,7 @@ function App() {
       </div>
 
       <div className="addcounter">
-        <AddCounter counter={counter} />
+        <AddCounter counter={counter} setCounter={setCounter} />
       </div>
     </>
   );

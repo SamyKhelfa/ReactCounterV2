@@ -1,8 +1,10 @@
-const AddCounter = ({ counter }) => {
+const AddCounter = ({ counter, setCounter }) => {
   return (
     <button
       onClick={() => {
-        counter.push(1);
+        const newCounter = [...counter];
+        newCounter.push(0);
+        setCounter(newCounter);
       }}
     >
       Add Counter
