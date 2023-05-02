@@ -3,7 +3,7 @@ const Increment = (props) => {
     <button
       onClick={() => {
         const countersCopy = [...props.counter];
-        countersCopy[props]++;
+        countersCopy[counter]++;
         props.setCounter(countersCopy);
       }}
     >
