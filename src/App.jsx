@@ -15,9 +15,10 @@ function App() {
         <Increment counter={counter} setCounter={setCounter} />
       </div>
 
-      {counter.map((counter, setCounter) => (
-        <p key={setCounter}>{counter}</p>
+      {counter.map((counter, index) => (
+        <p key={index}>{counter}</p>
       ))}
+
       <div className="decrement">
         <Decrement counter={counter} setCounter={setCounter} />
       </div>
