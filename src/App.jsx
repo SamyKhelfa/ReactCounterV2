@@ -11,21 +11,26 @@ function App() {
   return (
     <>
       <div>React Counter V2</div>
-      <div className="increment">
-        <Increment counter={counter} setCounter={setCounter} />
-      </div>
 
-      {counter.map((value, index) => (
-        <p key={index}>{value}</p>
-      ))}
+      {counter.map((elem, index) => {
+        return (
+          <div>
+            <div className="increment">
+              <Increment counter={counter} setCounter={setCounter} />
+            </div>
 
-      <div className="decrement">
-        <Decrement counter={counter} setCounter={setCounter} />
-      </div>
+            <div>{elem}</div>
 
-      <div className="reset">
-        <Reset counter={counter} setCounter={setCounter}></Reset>
-      </div>
+            <div className="decrement">
+              <Decrement counter={counter} setCounter={setCounter} />
+            </div>
+
+            <div className="reset">
+              <Reset counter={counter} setCounter={setCounter}></Reset>
+            </div>
+          </div>
+        );
+      })}
 
       <div className="addcounter">
         <AddCounter counter={counter} setCounter={setCounter} />

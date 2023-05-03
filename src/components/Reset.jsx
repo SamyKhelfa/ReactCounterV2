@@ -4,8 +4,7 @@ const Reset = (props) => {
   return (
     <button
       onClick={() => {
-        countersCopy[props] = 0;
-        countersCopy = 0;
+        countersCopy[0] = 0;
       }}
     >
       Reset
